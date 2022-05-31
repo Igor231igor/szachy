@@ -5,8 +5,285 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slav Defense</title>
+    <style type="text/css">
+
+        .chessboard {
+            width: 360px;
+            height: 360px;
+            margin: 15px;
+            border: 18px solid #333;
+        }
+        .black {
+            float: left;
+            width: 45px;
+            height: 45px;
+            background-color: #999;
+              font-size:35px;
+            text-align:center;
+            display: table-cell;
+            vertical-align:middle;
+        }
+        .white {
+            float: left;
+            width: 45px;
+            height: 45px;
+            background-color: #fff;
+            font-size:35px;
+            text-align:center;
+            display: table-cell;
+            vertical-align:middle;
+        }
+        
+        </style>
 </head>
 <body>
     <h1>Slav Defense</h1>
+    <h3>Slav Defense to Otwarcie często grane przeciwko Queens Gambit i jest jedny z najstarszych otwarć szachowych</h3>
+    <h3>Slav defense rozpoczyna się ruchami 1. d4 d5 2.c4 c6 </h3>
+    <div class="chessboard">
+        <!-- 1st -->
+        <div class="white" onclick="myFunction(this)">&#9820;</div>
+        <div class="black" onclick="myFunction(this)">&#9822;</div>
+        <div class="white" onclick="myFunction(this)">&#9821;</div>
+        <div class="black" onclick="myFunction(this)">&#9819;</div>
+        <div class="white" onclick="myFunction(this)">&#9818;</div>
+        <div class="black" onclick="myFunction(this)">&#9821;</div>
+        <div class="white" onclick="myFunction(this)">&#9822;</div>
+        <div class="black" onclick="myFunction(this)">&#9820;</div>
+        <!-- 2nd -->
+        <div class="black" onclick="myFunction(this)">&#9823;</div>
+        <div class="white" onclick="myFunction(this)">&#9823;</div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)">&#9823;</div>
+        <div class="white" onclick="myFunction(this)">&#9823;</div>
+        <div class="black" onclick="myFunction(this)">&#9823;</div>
+        <div class="white" onclick="myFunction(this)">&#9823;</div>
+        <!-- 3th -->
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)">&#9823;</div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <!-- 4st -->
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)">&#9823;</div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <!-- 5th -->
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)">&#9817;</div>
+        <div class="black" onclick="myFunction(this)">&#9817;</div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <!-- 6th -->
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <!-- 7th -->
+        <div class="white" onclick="myFunction(this)">&#9817;</div>
+        <div class="black" onclick="myFunction(this)">&#9817;</div>
+        <div class="white" onclick="myFunction(this)"></div>
+        <div class="black" onclick="myFunction(this)"></div>
+        <div class="white" onclick="myFunction(this)">&#9817;</div>
+        <div class="black" onclick="myFunction(this)">&#9817;</div>
+        <div class="white" onclick="myFunction(this)">&#9817;</div>
+        <div class="black" onclick="myFunction(this)">&#9817;</div>
+        <!-- 8th -->
+        <div class="black" onclick="myFunction(this)">&#9814;</div>
+        <div class="white" onclick="myFunction(this)">&#9816;</div>
+        <div class="black" onclick="myFunction(this)">&#9815;</div>
+        <div class="white" onclick="myFunction(this)">&#9813;</div>
+        <div class="black" onclick="myFunction(this)">&#9812;</div>
+        <div class="white" onclick="myFunction(this)">&#9815;</div>
+        <div class="black" onclick="myFunction(this)">&#9816;</div>
+        <div class="white" onclick="myFunction(this)">&#9814;</div>
+        </div>
+        <h3>Ze względu na mnogość linii Slav defense przedstawię tutaj tylko dwie najpopularniejsze wariacje.</h3>
+        <h3>1. Exchange variation jest to wariacja w której wymieniane są pionki 3. cxd5 cxd5 85% gier rozpoczynających się od Exchange variation kończą się remisem</h3>
+        <div class="chessboard">
+          <!-- 1st -->
+          <div class="white" onclick="myFunction(this)">&#9820;</div>
+          <div class="black" onclick="myFunction(this)">&#9822;</div>
+          <div class="white" onclick="myFunction(this)">&#9821;</div>
+          <div class="black" onclick="myFunction(this)">&#9819;</div>
+          <div class="white" onclick="myFunction(this)">&#9818;</div>
+          <div class="black" onclick="myFunction(this)">&#9821;</div>
+          <div class="white" onclick="myFunction(this)">&#9822;</div>
+          <div class="black" onclick="myFunction(this)">&#9820;</div>
+          <!-- 2nd -->
+          <div class="black" onclick="myFunction(this)">&#9823;</div>
+          <div class="white" onclick="myFunction(this)">&#9823;</div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)">&#9823;</div>
+          <div class="white" onclick="myFunction(this)">&#9823;</div>
+          <div class="black" onclick="myFunction(this)">&#9823;</div>
+          <div class="white" onclick="myFunction(this)">&#9823;</div>
+          <!-- 3th -->
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <!-- 4st -->
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)">&#9823;</div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <!-- 5th -->
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)">&#9817;</div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <!-- 6th -->
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <!-- 7th -->
+          <div class="white" onclick="myFunction(this)">&#9817;</div>
+          <div class="black" onclick="myFunction(this)">&#9817;</div>
+          <div class="white" onclick="myFunction(this)"></div>
+          <div class="black" onclick="myFunction(this)"></div>
+          <div class="white" onclick="myFunction(this)">&#9817;</div>
+          <div class="black" onclick="myFunction(this)">&#9817;</div>
+          <div class="white" onclick="myFunction(this)">&#9817;</div>
+          <div class="black" onclick="myFunction(this)">&#9817;</div>
+          <!-- 8th -->
+          <div class="black" onclick="myFunction(this)">&#9814;</div>
+          <div class="white" onclick="myFunction(this)">&#9816;</div>
+          <div class="black" onclick="myFunction(this)">&#9815;</div>
+          <div class="white" onclick="myFunction(this)">&#9813;</div>
+          <div class="black" onclick="myFunction(this)">&#9812;</div>
+          <div class="white" onclick="myFunction(this)">&#9815;</div>
+          <div class="black" onclick="myFunction(this)">&#9816;</div>
+          <div class="white" onclick="myFunction(this)">&#9814;</div>
+          </div>
+          <h3>2. Main slav 3.Sf3 Sf6 To jest linia najczęściej grana i prowadzi do ciekawej walki w zamkniętej pozycji pełnej taktycznych posunięć </h3>
+          <div class="chessboard">
+            <!-- 1st -->
+            <div class="white" onclick="myFunction(this)">&#9820;</div>
+            <div class="black" onclick="myFunction(this)">&#9822;</div>
+            <div class="white" onclick="myFunction(this)">&#9821;</div>
+            <div class="black" onclick="myFunction(this)">&#9819;</div>
+            <div class="white" onclick="myFunction(this)">&#9818;</div>
+            <div class="black" onclick="myFunction(this)">&#9821;</div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)">&#9820;</div>
+            <!-- 2nd -->
+            <div class="black" onclick="myFunction(this)">&#9823;</div>
+            <div class="white" onclick="myFunction(this)">&#9823;</div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)">&#9823;</div>
+            <div class="white" onclick="myFunction(this)">&#9823;</div>
+            <div class="black" onclick="myFunction(this)">&#9823;</div>
+            <div class="white" onclick="myFunction(this)">&#9823;</div>
+            <!-- 3th -->
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)">&#9823;</div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)">&#9822;</div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <!-- 4st -->
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)">&#9823;</div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <!-- 5th -->
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)">&#9817;</div>
+            <div class="black" onclick="myFunction(this)">&#9817;</div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <!-- 6th -->
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)">&#9816;</div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <!-- 7th -->
+            <div class="white" onclick="myFunction(this)">&#9817;</div>
+            <div class="black" onclick="myFunction(this)">&#9817;</div>
+            <div class="white" onclick="myFunction(this)"></div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)">&#9817;</div>
+            <div class="black" onclick="myFunction(this)">&#9817;</div>
+            <div class="white" onclick="myFunction(this)">&#9817;</div>
+            <div class="black" onclick="myFunction(this)">&#9817;</div>
+            <!-- 8th -->
+            <div class="black" onclick="myFunction(this)">&#9814;</div>
+            <div class="white" onclick="myFunction(this)">&#9816;</div>
+            <div class="black" onclick="myFunction(this)">&#9815;</div>
+            <div class="white" onclick="myFunction(this)">&#9813;</div>
+            <div class="black" onclick="myFunction(this)">&#9812;</div>
+            <div class="white" onclick="myFunction(this)">&#9815;</div>
+            <div class="black" onclick="myFunction(this)"></div>
+            <div class="white" onclick="myFunction(this)">&#9814;</div>
+            </div>
+            <h2>Teraz można także poruszać figurami :)</h2>
 </body>
+<script>
+    let sel;
+    function myFunction(element, color) {
+      if (element.innerHTML=='') {
+        element.innerHTML = sel.innerHTML; 
+        sel.innerHTML = "";
+        sel.style.color = 'black';
+      } else { 
+        if (element.style.color=='red') {
+            element.style.color = 'black'  
+        } else { 
+            element.style.color = 'red';
+            if (sel != null) sel.style.color = 'black';    
+            sel = element;  
+        }  
+      }
+    }
+    
+    </script>
 </html>

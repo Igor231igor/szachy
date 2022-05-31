@@ -5,8 +5,286 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sicilian</title>
+    <style type="text/css">
+
+      .chessboard {
+          width: 360px;
+          height: 360px;
+          margin: 15px;
+          border: 18px solid #333;
+      }
+      .black {
+          float: left;
+          width: 45px;
+          height: 45px;
+          background-color: #999;
+            font-size:35px;
+          text-align:center;
+          display: table-cell;
+          vertical-align:middle;
+      }
+      .white {
+          float: left;
+          width: 45px;
+          height: 45px;
+          background-color: #fff;
+          font-size:35px;
+          text-align:center;
+          display: table-cell;
+          vertical-align:middle;
+      }
+      
+      </style>
 </head>
 <body>
     <h1>Sicilian Defense</h1>
+    <h3>Sicilian defense to najczęściej grane otwarcie przeciwko 1.e4 oraz Otwarcie z najlepszym procentem wygranych w stosunku do przegranych (dla czarnych)</h3>
+    <h3>Sicilian rozpoczyna się 1.e4 c5</h3>
+    <div class="chessboard">
+    <!-- 1st -->
+    <div class="white" onclick="myFunction(this)">&#9820;</div>
+    <div class="black" onclick="myFunction(this)">&#9822;</div>
+    <div class="white" onclick="myFunction(this)">&#9821;</div>
+    <div class="black" onclick="myFunction(this)">&#9819;</div>
+    <div class="white" onclick="myFunction(this)">&#9818;</div>
+    <div class="black" onclick="myFunction(this)">&#9821;</div>
+    <div class="white" onclick="myFunction(this)">&#9822;</div>
+    <div class="black" onclick="myFunction(this)">&#9820;</div>
+    <!-- 2nd -->
+    <div class="black" onclick="myFunction(this)">&#9823;</div>
+    <div class="white" onclick="myFunction(this)">&#9823;</div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)">&#9823;</div>
+    <div class="black" onclick="myFunction(this)">&#9823;</div>
+    <div class="white" onclick="myFunction(this)">&#9823;</div>
+    <div class="black" onclick="myFunction(this)">&#9823;</div>
+    <div class="white" onclick="myFunction(this)">&#9823;</div>
+    <!-- 3th -->
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <!-- 4st -->
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)">&#9823;</div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <!-- 5th -->
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)">&#9817;</div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <!-- 6th -->
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)"></div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <!-- 7th -->
+    <div class="white" onclick="myFunction(this)">&#9817;</div>
+    <div class="black" onclick="myFunction(this)">&#9817;</div>
+    <div class="white" onclick="myFunction(this)">&#9817;</div>
+    <div class="black" onclick="myFunction(this)">&#9817;</div>
+    <div class="white" onclick="myFunction(this)"></div>
+    <div class="black" onclick="myFunction(this)">&#9817;</div>
+    <div class="white" onclick="myFunction(this)">&#9817;</div>
+    <div class="black" onclick="myFunction(this)">&#9817;</div>
+    <!-- 8th -->
+    <div class="black" onclick="myFunction(this)">&#9814;</div>
+    <div class="white" onclick="myFunction(this)">&#9816;</div>
+    <div class="black" onclick="myFunction(this)">&#9815;</div>
+    <div class="white" onclick="myFunction(this)">&#9813;</div>
+    <div class="black" onclick="myFunction(this)">&#9812;</div>
+    <div class="white" onclick="myFunction(this)">&#9815;</div>
+    <div class="black" onclick="myFunction(this)">&#9816;</div>
+    <div class="white" onclick="myFunction(this)">&#9814;</div>
+    </div>
+    <h3>Sicilian ma wiele wariacji przy czym niektóre są strasznie rzadko-grane a więc przedstawię tylko Najdorf Sicilian I Classical sicilian</h3>
+    <h3>obydwie Sicilian to wariacja Sicilian gdzie gra się 2.Sf3 d6 3.d4 cxd4 4.Sxd4 Sf6 5.Sc3 </h3>
+    <h3>Najdorf to wersja, wktórej w piątym ruchu gra się 5.Sc3 a6</h3>
+    <div class="chessboard">
+      <!-- 1st -->
+      <div class="white" onclick="myFunction(this)">&#9820;</div>
+      <div class="black" onclick="myFunction(this)">&#9822;</div>
+      <div class="white" onclick="myFunction(this)">&#9821;</div>
+      <div class="black" onclick="myFunction(this)">&#9819;</div>
+      <div class="white" onclick="myFunction(this)">&#9818;</div>
+      <div class="black" onclick="myFunction(this)">&#9821;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9820;</div>
+      <!-- 2nd -->
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)">&#9823;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9823;</div>
+      <div class="white" onclick="myFunction(this)">&#9823;</div>
+      <div class="black" onclick="myFunction(this)">&#9823;</div>
+      <div class="white" onclick="myFunction(this)">&#9823;</div>
+      <!-- 3th -->
+      <div class="white" onclick="myFunction(this)">&#9823;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9823;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9822;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <!-- 4st -->
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <!-- 5th -->
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9816;</div>
+      <div class="white" onclick="myFunction(this)">&#9817;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <!-- 6th -->
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9816;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <!-- 7th -->
+      <div class="white" onclick="myFunction(this)">&#9817;</div>
+      <div class="black" onclick="myFunction(this)">&#9817;</div>
+      <div class="white" onclick="myFunction(this)">&#9817;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9817;</div>
+      <div class="white" onclick="myFunction(this)">&#9817;</div>
+      <div class="black" onclick="myFunction(this)">&#9817;</div>
+      <!-- 8th -->
+      <div class="black" onclick="myFunction(this)">&#9814;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9815;</div>
+      <div class="white" onclick="myFunction(this)">&#9813;</div>
+      <div class="black" onclick="myFunction(this)">&#9812;</div>
+      <div class="white" onclick="myFunction(this)">&#9815;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)">&#9814;</div>
+      </div>
+    <h3>W classical gra się natomiast 5.Sc3 Sc6</h3>
+    <div class="chessboard">
+      <!-- 1st -->
+      <div class="white" onclick="myFunction(this)">&#9820;</div>
+      <div class="black" onclick="myFunction(this)">&#9822;</div>
+      <div class="white" onclick="myFunction(this)">&#9821;</div>
+      <div class="black" onclick="myFunction(this)">&#9819;</div>
+      <div class="white" onclick="myFunction(this)">&#9818;</div>
+      <div class="black" onclick="myFunction(this)">&#9821;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9820;</div>
+      <!-- 2nd -->
+      <div class="black" onclick="myFunction(this)">&#9823;</div>
+      <div class="white" onclick="myFunction(this)">&#9823;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9823;</div>
+      <div class="white" onclick="myFunction(this)">&#9823;</div>
+      <div class="black" onclick="myFunction(this)">&#9823;</div>
+      <div class="white" onclick="myFunction(this)">&#9823;</div>
+      <!-- 3th -->
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)">&#9822;</div>
+      <div class="black" onclick="myFunction(this)">&#9823;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9822;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <!-- 4st -->
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <!-- 5th -->
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9816;</div>
+      <div class="white" onclick="myFunction(this)">&#9817;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <!-- 6th -->
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9816;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <!-- 7th -->
+      <div class="white" onclick="myFunction(this)">&#9817;</div>
+      <div class="black" onclick="myFunction(this)">&#9817;</div>
+      <div class="white" onclick="myFunction(this)">&#9817;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9817;</div>
+      <div class="white" onclick="myFunction(this)">&#9817;</div>
+      <div class="black" onclick="myFunction(this)">&#9817;</div>
+      <!-- 8th -->
+      <div class="black" onclick="myFunction(this)">&#9814;</div>
+      <div class="white" onclick="myFunction(this)"></div>
+      <div class="black" onclick="myFunction(this)">&#9815;</div>
+      <div class="white" onclick="myFunction(this)">&#9813;</div>
+      <div class="black" onclick="myFunction(this)">&#9812;</div>
+      <div class="white" onclick="myFunction(this)">&#9815;</div>
+      <div class="black" onclick="myFunction(this)"></div>
+      <div class="white" onclick="myFunction(this)">&#9814;</div>
+      </div>
+      <h2>Teraz można także poruszać figurami :)</h2>
 </body>
+<script>
+    let sel;
+    function myFunction(element, color) {
+      if (element.innerHTML=='') {
+        element.innerHTML = sel.innerHTML; 
+        sel.innerHTML = "";
+        sel.style.color = 'black';
+      } else { 
+        if (element.style.color=='red') {
+            element.style.color = 'black'  
+        } else { 
+            element.style.color = 'red';
+            if (sel != null) sel.style.color = 'black';    
+            sel = element;  
+        }  
+      }
+    }
+    
+    </script>
 </html>
